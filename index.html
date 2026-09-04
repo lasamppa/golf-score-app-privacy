@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Golf Score App — Privacy Notice</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0;
+    padding: 2.5rem 1.25rem 4rem;
+    background: #fafaf8;
+    color: #1c1c1c;
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 640px; margin: 0 auto; }
+  h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+  .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+  h2 { font-size: 1.1rem; margin-top: 2rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.95rem; }
+  th, td { text-align: left; padding: 0.5rem 0.75rem 0.5rem 0; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { color: #444; font-weight: 600; }
+  code { background: #eee; padding: 0.1em 0.35em; border-radius: 3px; font-size: 0.9em; }
+  ul { padding-left: 1.25rem; }
+  li { margin: 0.3rem 0; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #16161a; color: #e8e8e6; }
+    .meta { color: #9a9a9a; }
+    th, td { border-bottom-color: #333; }
+    th { color: #bbb; }
+    code { background: #2a2a2e; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Golf Score App — Privacy Notice</h1>
+  <p class="meta">Personal, independently-developed app. Last updated 2026-09-04.</p>
+
+  <h2>What the app stores, and where</h2>
+
+  <p><strong>On your device only</strong></p>
+  <ul>
+    <li>Your rounds, scores, per-hole shot detail, and settings are stored locally on your phone and work fully offline.</li>
+    <li>Live GPS distance-to-green and the tap-to-measure tool are computed on the device from your location and are never sent anywhere.</li>
+  </ul>
+
+  <p><strong>If you sign in with Google (optional)</strong></p>
+  <p>Sign-in is entirely optional; everything above works without it. When you do sign in:</p>
+  <ul>
+    <li>Your name, email address, and profile picture URL come from your Google account (via the verified sign-in token) and are stored on the backend so your rounds and settings sync across your own devices.</li>
+    <li>Your rounds sync to the backend under your account.</li>
+    <li><strong>Player discovery.</strong> So that a playing partner can link your scores to your account, other signed-in users can look you up:
+      <ul>
+        <li>by email — exact match only; on by default (this is how player linking has always worked);</li>
+        <li>by name — exact whole-name match only, no partial/prefix search; off by default, opt in under Settings › Privacy.</li>
+      </ul>
+      With both off, nobody can add you as a linked player — your rounds stay solo. You can still add and link other players yourself either way.
+    </li>
+    <li>A player you link into a round can see that player entry's name, scores, and any shot detail recorded for them during that round. In a live (shared) round, participants see each other's names, avatars, and running scores.</li>
+  </ul>
+
+  <p><strong>Shot locations (only if you enable "track shot locations")</strong></p>
+  <ul>
+    <li>The GPS positions you played off-green shots from are saved to the backend alongside the round. This is the only location data that leaves your device, and only when you turn the setting on.</li>
+    <li>Putts are never location-tracked.</li>
+  </ul>
+
+  <h2>Home club</h2>
+  <p>If you set a home club, the club name is stored with your synced settings and shown in player-search results as a disambiguator.</p>
+
+  <h2>Third parties</h2>
+  <table>
+    <tr><th>Service</th><th>Purpose</th><th>Data shared</th></tr>
+    <tr><td>Google Sign-In</td><td>optional authentication</td><td>sign-in token → name, email, picture</td></tr>
+    <tr><td>golfapi.io</td><td>course/hole/tee data + coordinates</td><td>course lookups only, no personal data</td></tr>
+    <tr><td>MapTiler + OpenStreetMap</td><td>map tiles + course geometry</td><td>map tile requests (course area)</td></tr>
+    <tr><td>Microsoft Azure</td><td>backend hosting</td><td>everything the backend stores, above</td></tr>
+  </table>
+
+  <h2>Retention &amp; deletion</h2>
+  <ul>
+    <li>Deleting a round in the app removes it from the backend too.</li>
+    <li>Signing out stops syncing and clears the local account/session.</li>
+    <li>Settings › Privacy › Delete account permanently removes your account, synced settings, and every round you own — server-side and on that device. Rounds other people own that you joined stay theirs, with your link removed. Not reversible.</li>
+    <li>Settings › Privacy › Export my data returns everything the backend holds about you.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>This is an independently-developed hobby app, not run by a company. For questions about your data, use the in-app "Export my data" / "Delete account" controls in Settings › Privacy.</p>
+</main>
+</body>
+</html>
