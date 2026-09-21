@@ -35,7 +35,7 @@
 <body>
 <main>
   <h1>Golf Score App — Privacy Notice</h1>
-  <p class="meta">Personal, independently-developed app. Last updated 2026-09-04.</p>
+  <p class="meta">Personal, independently-developed app. Last updated 2026-09-21.</p>
 
   <h2>What the app stores, and where</h2>
 
@@ -45,11 +45,17 @@
     <li>Live GPS distance-to-green and the tap-to-measure tool are computed on the device from your location and are never sent anywhere.</li>
   </ul>
 
+  <p><strong>Crash reports</strong></p>
+  <ul>
+    <li>If the phone app or the watch app crashes, a crash report is sent to the backend the next time the app opens (a watch's report goes via its paired phone): the error and where in the code it happened, the app version, and the device model and Android version, with a random per-device ID. No name, account or location. It is used only to fix the bug and is not stored in the app's database.</li>
+  </ul>
+
   <p><strong>If you sign in with Google (optional)</strong></p>
   <p>Sign-in is entirely optional; everything above works without it. When you do sign in:</p>
   <ul>
     <li>Your name, email address, and profile picture URL come from your Google account (via the verified sign-in token) and are stored on the backend so your rounds and settings sync across your own devices.</li>
     <li>Your rounds sync to the backend under your account.</li>
+    <li>Each device you use while signed in is recorded under your account (its random device ID, model, Android and app version, and when it was first and last used) and listed back to you in Settings › Your devices. It is included in the data export and removed with the account.</li>
     <li><strong>Player discovery.</strong> So that a playing partner can link your scores to your account, other signed-in users can look you up:
       <ul>
         <li>by email — exact match only; on by default (this is how player linking has always worked);</li>
