@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Golf Score App — Privacy Notice</title>
+<title>Birdie Book — Privacy Notice</title>
 <style>
   :root { color-scheme: light dark; }
   body {
@@ -23,6 +23,8 @@
   code { background: #eee; padding: 0.1em 0.35em; border-radius: 3px; font-size: 0.9em; }
   ul { padding-left: 1.25rem; }
   li { margin: 0.3rem 0; }
+  .box { border: 1px solid #ccc; border-radius: 6px; padding: 0.25rem 1rem 0.75rem; margin-top: 1rem; }
+  @media (max-width: 480px) { table { font-size: 0.85rem; } }
   @media (prefers-color-scheme: dark) {
     body { background: #16161a; color: #e8e8e6; }
     .meta { color: #9a9a9a; }
@@ -34,66 +36,90 @@
 </head>
 <body>
 <main>
-  <h1>Golf Score App — Privacy Notice</h1>
-  <p class="meta">Personal, independently-developed app. Last updated 2026-09-21.</p>
+  <h1>Birdie Book — Privacy Notice</h1>
+  <p class="meta">Birdie Book is a personal hobby app made in Finland by Samuli Lappalainen. Last updated 2026-09-22.</p>
 
-  <h2>What the app stores, and where</h2>
+  <p>Questions or requests: <strong>birdiebook.golf.app@gmail.com</strong>. This notice says what the app does with
+  your data — nothing more happens to it. There are no ads, no analytics and no tracking SDKs in the app.</p>
 
-  <p><strong>On your device only</strong></p>
+  <h2>On your device</h2>
   <ul>
-    <li>Your rounds, scores, per-hole shot detail, and settings are stored locally on your phone and work fully offline.</li>
-    <li>Live GPS distance-to-green and the tap-to-measure tool are computed on the device from your location and are never sent anywhere.</li>
+    <li>Your rounds, scores and settings are stored on your phone (and watch) and work fully offline.
+      <strong>Signed out, they stay there</strong> — nothing about your rounds is uploaded.</li>
+    <li>Live distances to the green and tap-to-measure are worked out on your device and never leave it.</li>
   </ul>
 
-  <p><strong>Crash reports</strong></p>
+  <h2>Finding courses</h2>
   <ul>
-    <li>If the phone app or the watch app crashes, a crash report is sent to the backend the next time the app opens (a watch's report goes via its paired phone): the error and where in the code it happened, the app version, and the device model and Android version, with a random per-device ID. No name, account or location. It is used only to fix the bug and is not stored in the app's database.</li>
+    <li><strong>Courses near me</strong>, and starting a round on the watch, send your position
+      <strong>rounded to about 100 m</strong> to our backend, which asks golfapi.io for nearby courses.
+      It is not stored.</li>
+    <li>Course searches (the text you type) go the same way.</li>
   </ul>
 
-  <p><strong>If you sign in with Google (optional)</strong></p>
-  <p>Sign-in is entirely optional; everything above works without it. When you do sign in:</p>
+  <h2>Crash reports</h2>
   <ul>
-    <li>Your name, email address, and profile picture URL come from your Google account (via the verified sign-in token) and are stored on the backend so your rounds and settings sync across your own devices.</li>
-    <li>Your rounds sync to the backend under your account.</li>
-    <li>Each device you use while signed in is recorded under your account (its random device ID, model, Android and app version, and when it was first and last used) and listed back to you in Settings › Your devices. It is included in the data export and removed with the account.</li>
-    <li><strong>Player discovery.</strong> So that a playing partner can link your scores to your account, other signed-in users can look you up:
-      <ul>
-        <li>by email — exact match only; on by default (this is how player linking has always worked);</li>
-        <li>by name — exact whole-name match only, no partial/prefix search; off by default, opt in under Settings › Privacy.</li>
-      </ul>
-      With both off, nobody can add you as a linked player — your rounds stay solo. You can still add and link other players yourself either way.
-    </li>
-    <li>A player you link into a round can see that player entry's name, scores, and any shot detail recorded for them during that round. In a live (shared) round, participants see each other's names, avatars, and running scores.</li>
+    <li>If the phone or watch app crashes, a report is sent to our backend the next time the app opens:
+      the error and where in the code it happened, the app version, and the phone or watch model and
+      Android version. It carries a random ID for this installation of the app — <strong>not your
+      account, name or location</strong> — and is used only to fix the bug.</li>
   </ul>
 
-  <p><strong>Shot locations (only if you enable "track shot locations")</strong></p>
+  <h2>If you sign in with Google (optional)</h2>
+  <p>Everything above works without an account. If you sign in:</p>
   <ul>
-    <li>The GPS positions you played off-green shots from are saved to the backend alongside the round. This is the only location data that leaves your device, and only when you turn the setting on.</li>
-    <li>Putts are never location-tracked.</li>
+    <li>Your <strong>name, email address and profile picture</strong> come from your Google account and
+      are stored so your rounds and settings follow you across your devices.</li>
+    <li><strong>Your rounds</strong> are stored under your account, including the players you add to
+      them (their name, gender, handicap and scores) and any shot detail you record.</li>
+    <li><strong>Your settings</strong> sync too: handicap index, gender, units, home club, the clubs in
+      your bag and your saved buddies.</li>
+    <li><strong>Player lookup.</strong> So a playing partner can link your scores to your account, other
+      signed-in users can find you <strong>by exact email</strong> (on by default) or <strong>by exact
+      name</strong> (off by default) — Settings › Player discovery. A result shows your name, picture,
+      home club, handicap index and the year you joined.</li>
+    <li><strong>Playing together.</strong> A player you link into your round can see that entry's name,
+      scores and shot detail. In a live round the participants see each other's names, pictures and
+      scores — <strong>not your shot locations</strong>. In an event, your name and score appear on that
+      event's leaderboard.</li>
+    <li><strong>Your devices.</strong> Each device you use while signed in is listed under your account
+      (model, Android and app version, first and last use), shown to you in Settings › Your devices.</li>
   </ul>
 
-  <h2>Home club</h2>
-  <p>If you set a home club, the club name is stored with your synced settings and shown in player-search results as a disambiguator.</p>
+  <h2>Shot locations (only if you turn on “Track shot locations”)</h2>
+  <ul>
+    <li>The spots you played off-green shots from are saved with the round under your account. Only you
+      get them back. Putts are never location-tracked.</li>
+  </ul>
 
-  <h2>Third parties</h2>
+  <h2>Who else is involved</h2>
   <table>
-    <tr><th>Service</th><th>Purpose</th><th>Data shared</th></tr>
-    <tr><td>Google Sign-In</td><td>optional authentication</td><td>sign-in token → name, email, picture</td></tr>
-    <tr><td>golfapi.io</td><td>course/hole/tee data + coordinates</td><td>course lookups only, no personal data</td></tr>
-    <tr><td>MapTiler + OpenStreetMap</td><td>map tiles + course geometry</td><td>map tile requests (course area)</td></tr>
-    <tr><td>Microsoft Azure</td><td>backend hosting</td><td>everything the backend stores, above</td></tr>
+    <tr><th>Service</th><th>Why</th><th>What it sees</th></tr>
+    <tr><td>Google</td><td>Sign-in</td><td>Your sign-in; profile pictures are loaded from Google's servers</td></tr>
+    <tr><td>golfapi.io (Velocor Ltd, Helsinki)</td><td>Course data</td><td>Course searches and rounded nearby-search positions, from our backend</td></tr>
+    <tr><td>MapTiler</td><td>Map tiles</td><td>Your IP address and the map area on your screen</td></tr>
+    <tr><td>OpenStreetMap</td><td>Course shapes</td><td>Nothing about you — our backend fetches course areas only</td></tr>
+    <tr><td>Microsoft Azure</td><td>Hosting our backend and database</td><td>Everything the backend stores, above</td></tr>
   </table>
 
-  <h2>Retention &amp; deletion</h2>
+  <h2 id="delete">Your data, your choice — including deleting your account</h2>
   <ul>
-    <li>Deleting a round in the app removes it from the backend too.</li>
-    <li>Signing out stops syncing and clears the local account/session.</li>
-    <li>Settings › Privacy › Delete account permanently removes your account, synced settings, and every round you own — server-side and on that device. Rounds other people own that you joined stay theirs, with your link removed. Not reversible.</li>
-    <li>Settings › Privacy › Export my data returns everything the backend holds about you.</li>
+    <li><strong>Delete a round</strong> in the app and it is removed from our backend too.</li>
+    <li><strong>Settings › Privacy › Export my data</strong> gives you everything the backend holds about you.</li>
+    <li><strong>Settings › Privacy › Delete account</strong> permanently removes your account, settings
+      and every round you own, on the server and on that device. Rounds other people own that you
+      joined stay theirs, with your link removed.</li>
+    <li><strong>Server logs</strong> (which device called which part of the backend, and when) are kept
+      for up to 90 days for security and troubleshooting, then deleted automatically. They are not
+      removed by deleting your account.</li>
+    <li>Signing out stops syncing and ends the session on that device; your rounds stay on it.</li>
   </ul>
-
-  <h2>Contact</h2>
-  <p>This is an independently-developed hobby app, not run by a company. For questions about your data, use the in-app "Export my data" / "Delete account" controls in Settings › Privacy.</p>
+  <div class="box">
+    <p><strong>Delete your Birdie Book account without the app</strong></p>
+    <p>Email <strong>birdiebook.golf.app@gmail.com</strong> from the address of the Google account you signed in with,
+    and ask for your account to be deleted. Your account, settings and every round you own are deleted
+    within 30 days, and you get a reply when it's done.</p>
+  </div>
 </main>
 </body>
 </html>
