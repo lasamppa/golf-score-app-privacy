@@ -37,20 +37,26 @@
 <body>
 <main>
   <h1>Purple Martin — Privacy Notice</h1>
-  <p class="meta">Purple Martin (formerly Birdie Book) is a personal hobby app made in Finland by Samuli Lappalainen. Last updated 2026-10-03.</p>
+  <p class="meta">Purple Martin is a golf app made in Finland. Data controller: Samuli Lappalainen, Finland (<a href="mailto:contact@purplemartingolf.com">contact@purplemartingolf.com</a>). Last updated 2026-10-06.</p>
   <p class="meta"><a href="terms.html">Terms of Service</a> · <a href="terms.html#fi">Käyttöehdot</a></p>
 
-  <p>Questions or requests: <strong>birdiebook.golf.app@gmail.com</strong>. This notice says what the app does with
+  <p>Questions or requests: <strong><a href="mailto:contact@purplemartingolf.com">contact@purplemartingolf.com</a></strong>. This notice says what the app does with
   your data — nothing more happens to it. There are no ads, no analytics and no tracking SDKs in the app.</p>
 
   <h2>On your device</h2>
   <ul>
     <li>Your rounds, scores and settings are stored on your phone (and watch) and work fully offline.
-      <strong>Signed out, they stay there</strong> — nothing about your rounds is uploaded.</li>
+      <strong>Signed out, they stay there</strong> — nothing about your rounds is uploaded. (Test versions
+      before 2026-09-22 did upload rounds played signed out — course, scores and the players added — under a
+      random ID for that installation, not an account or name. Those copies are kept on our server with no set
+      time limit.)</li>
     <li>Live distances to the green and tap-to-measure are worked out on your device and never leave it.</li>
+    <li><strong>Battery use.</strong> The battery level, screen-on time and GPS use of your phone and watches are
+      noted for each round and kept only on your devices (the phone keeps the last 10 rounds). A short summary goes
+      into the app log, so it leaves your phone only if you attach the log to feedback.</li>
     <li><strong>Help improve shot detection</strong> (off unless you say yes — the app asks once, at your
-      first round with a watch; change it any time in Settings › Watch): your watch records its GPS track and
-      wrist motion during rounds and passes the file to your phone. When you're signed in, the phone sends it
+      first round with a watch; change it any time in Settings › Watch): your Wear OS or Garmin watch records
+      its GPS track and wrist motion during rounds and passes the file to your phone. When you're signed in, the phone sends it
       with that round's scorecard and marked shots to Purple Martin's server, <strong>only to improve shot
       detection</strong>. Legal basis: your consent. Kept 12 months, deleted with your account; a copy stays
       on your phone for 90 days, or until you sign out.</li>
@@ -59,9 +65,22 @@
   <h2>Finding courses</h2>
   <ul>
     <li><strong>Courses near me</strong>, and starting a round on the watch, send your position
-      <strong>rounded to about 100 m</strong> to our backend, which asks golfapi.io for nearby courses.
-      It is not stored.</li>
+      <strong>rounded to about 100 m</strong> to our backend. The backend snaps it to a <strong>500 m
+      square</strong> and asks golfapi.io for nearby courses from the square's centre, so your own position never
+      leaves our backend. The courses found around that square are kept for 30 days to answer the next search
+      there, linked to no one.</li>
     <li>Course searches (the text you type) go the same way.</li>
+  </ul>
+
+  <h2>Weather and elevation</h2>
+  <ul>
+    <li>Plays-like distance (temperature) and the wind line use the <strong>weather at the course</strong>. The
+      app asks our backend by course only; the backend asks MET Norway (Open-Meteo if MET Norway is unavailable)
+      for the course's location. <strong>Your position is never sent.</strong></li>
+    <li><strong>Height data</strong> for plays-like and green slopes is fetched by our backend for the course
+      area only: from the National Land Survey of Finland, Estonia's Maa- ja Ruumiamet, Portugal's DGT (tiles
+      downloaded once and stored on our server), and elsewhere Open-Meteo.</li>
+    <li>On a Garmin watch, if the phone has sent no weather, the watch uses Garmin's own weather.</li>
   </ul>
 
   <h2>Crash reports</h2>
@@ -70,6 +89,7 @@
       the error and where in the code it happened, the app version, and the phone or watch model and
       Android version. It carries a random ID for this installation of the app — <strong>not your
       account, name or location</strong> — and is used only to fix the bug.</li>
+    <li>The Garmin watch app sends no crash reports.</li>
   </ul>
 
   <h2>If you sign in with Google (optional)</h2>
@@ -97,7 +117,9 @@
     <li><strong>Reports and blocks.</strong> If you report someone's picture, the report (your account, the picture,
       the reason and any note) is kept to handle it and for up to 12 months after it's resolved; the person reported
       isn't told who reported. The players you block are stored with your account. Both are included in Export my
-      data. Deleting your account removes your name from reports you filed and deletes reports about you.</li>
+      data. Deleting your account removes your name from reports you filed and deletes reports about you.
+      Pictures are reviewed by the developer; no outside moderation service is used. A picture reported by three
+      different golfers is hidden until it has been reviewed.</li>
     <li><strong>Your devices.</strong> Each device you use while signed in is listed under your account
       (model, Android and app version, first and last use), shown to you in Settings › Your devices.</li>
     <li><strong>Send feedback</strong> (Settings, or the round menu) sends what you write, with your name
@@ -122,8 +144,11 @@
     <tr><td>golfapi.io (Velocor Ltd, Helsinki)</td><td>Course data</td><td>Course searches and rounded nearby-search positions, from our backend</td></tr>
     <tr><td>MapTiler</td><td>Satellite images, only when you switch a map to satellite</td><td>Your IP address and the map area on your screen</td></tr>
     <tr><td>OpenStreetMap</td><td>Course shapes and the map around them (roads, paths, buildings, forest)</td><td>Nothing about you — our backend fetches course areas only</td></tr>
+    <tr><td>MET Norway, Open-Meteo</td><td>Weather at the course</td><td>Nothing about you — our backend asks for the course's location</td></tr>
+    <tr><td>National Land Survey of Finland, Maa- ja Ruumiamet (Estonia), Open-Meteo</td><td>Height data for plays-like and green slopes</td><td>Nothing about you — our backend fetches course areas only</td></tr>
+    <tr><td>DGT (Direção-Geral do Território, Portugal)</td><td>Height data for courses in Portugal</td><td>Nothing — downloaded once and stored on our server, never contacted while you use the app</td></tr>
     <tr><td>Microsoft Azure</td><td>Hosting our backend and database</td><td>Everything the backend stores, above</td></tr>
-    <tr><td>Garmin Connect</td><td>Only with the Garmin watch app: the round saved as a golf activity in <em>your</em> Garmin account, under Garmin's terms (turn it off in the watch's round menu)</td><td>The round's time, heart rate and GPS track, a lap per hole</td></tr>
+    <tr><td>Garmin Connect</td><td>Only with the Garmin watch app: the round saved as a golf activity in <em>your</em> Garmin account, under Garmin's terms (turn it off in the watch's round menu). The Garmin Connect app on your phone also carries the messages between Purple Martin and the watch app</td><td>The round's time, heart rate and GPS track, a lap per hole</td></tr>
   </table>
 
   <h2 id="delete">Your data, your choice — including deleting your account</h2>
@@ -142,7 +167,7 @@
   </ul>
   <div class="box">
     <p><strong>Delete your Purple Martin account without the app</strong></p>
-    <p>Email <strong>birdiebook.golf.app@gmail.com</strong> from the address of the Google account you signed in with,
+    <p>Email <strong><a href="mailto:contact@purplemartingolf.com">contact@purplemartingolf.com</a></strong> from the address of the Google account you signed in with,
     and ask for your account to be deleted. Your account, settings and every round you own are deleted
     within 30 days, and you get a reply when it's done.</p>
   </div>
