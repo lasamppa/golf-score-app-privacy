@@ -37,7 +37,7 @@
 <body>
 <main>
   <h1>Purple Martin — Privacy Notice</h1>
-  <p class="meta">Purple Martin is a golf app made in Finland. Data controller: Samuli Lappalainen, Finland (<a href="mailto:contact@purplemartingolf.com">contact@purplemartingolf.com</a>). Last updated 2026-10-10.</p>
+  <p class="meta">Purple Martin is a golf app made in Finland. Data controller: Samuli Lappalainen, Finland (<a href="mailto:contact@purplemartingolf.com">contact@purplemartingolf.com</a>). Last updated 2026-10-15.</p>
   <p class="meta"><a href="terms.html">Terms of Service</a> · <a href="terms.html#fi">Käyttöehdot</a></p>
 
   <p>Questions or requests: <strong><a href="mailto:contact@purplemartingolf.com">contact@purplemartingolf.com</a></strong>. This notice says what the app does with
@@ -47,7 +47,9 @@
   <ul>
     <li>Your rounds, scores and settings are stored on your phone (and watch) and work fully offline.
       <strong>Signed out, they stay there</strong> — nothing about your rounds is uploaded.</li>
-    <li>Live distances to the green and tap-to-measure are worked out on your device and never leave it.</li>
+    <li>Live distances to the green and tap-to-measure are worked out on your device and never leave it. On iPhone, the
+      distances on the lock screen and in the Dynamic Island are updated by the app on your phone — they are not sent
+      through Apple's or our servers.</li>
     <li><strong>Battery use.</strong> The battery level, screen-on time and GPS use of your phone and watches are
       noted for each round and kept only on your devices (the phone keeps the last 10 rounds). A short summary goes
       into the app log, so it leaves your phone only if you attach the log to feedback.</li>
@@ -82,9 +84,9 @@
 
   <h2>Crash reports</h2>
   <ul>
-    <li>If the Android phone app or the Wear OS watch app crashes, a report is sent to our backend the next time the app opens:
+    <li>If the phone app (Android or iPhone) or the Wear OS watch app crashes, a report is sent to our backend the next time the app opens:
       the error and where in the code it happened, the app version, and the phone or watch model and
-      Android version. It carries a random ID for this installation of the app — <strong>not your
+      its Android or iOS version. It carries a random ID for this installation of the app — <strong>not your
       account, name or location</strong> — and is used only to fix the bug.</li>
     <li>The Garmin watch app sends no crash reports.</li>
   </ul>
@@ -120,7 +122,7 @@
       Pictures are reviewed by the developer; no outside moderation service is used. A picture reported by three
       different golfers is hidden until it has been reviewed.</li>
     <li><strong>Your devices.</strong> Each device you use while signed in is listed under your account
-      (model, Android and app version, first and last use), shown to you in Settings › Your devices.</li>
+      (model, Android or iOS version and app version, first and last use), shown to you in Settings › Your devices.</li>
     <li><strong>Send feedback</strong> (Settings, or the round menu) sends what you write, with your name
       and email so we can reply, the app version and phone model, any screenshots you add (from the round
       menu, a picture of the screen you were on is added first — you can remove it), and — <strong>only if
@@ -146,6 +148,7 @@
     <tr><td>MET Norway, Open-Meteo</td><td>Weather at the course</td><td>Nothing about you — our backend asks for the course's location</td></tr>
     <tr><td>National Land Survey of Finland, Maa- ja Ruumiamet (Estonia), Open-Meteo</td><td>Height data for plays-like and green slopes</td><td>Nothing about you — our backend fetches course areas only</td></tr>
     <tr><td>DGT (Direção-Geral do Território, Portugal)</td><td>Height data for courses in Portugal</td><td>Nothing — downloaded once and stored on our server, never contacted while you use the app</td></tr>
+    <tr><td>Apple</td><td>App Store and TestFlight: installing and updating the iPhone app</td><td>If you have chosen in the iPhone's settings to share analytics with app developers, Apple passes on crash reports and usage statistics without your name. TestFlight testers' feedback goes through Apple. The app itself contains no Apple analytics code</td></tr>
     <tr><td>Microsoft Azure</td><td>Hosting our backend and database</td><td>Everything the backend stores, above</td></tr>
     <tr><td>Garmin Connect</td><td>Only with the Garmin watch app: the round saved as a golf activity in <em>your</em> Garmin account, under Garmin's terms (turn it off in the watch's round menu). The Garmin Connect app on your phone also carries the messages between Purple Martin and the watch app</td><td>The round's time, heart rate and GPS track, a lap per hole</td></tr>
   </table>
