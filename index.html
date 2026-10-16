@@ -37,7 +37,7 @@
 <body>
 <main>
   <h1>Purple Martin — Privacy Notice</h1>
-  <p class="meta">Purple Martin is a golf app made in Finland. Data controller: Samuli Lappalainen, Finland (<a href="mailto:contact@purplemartingolf.com">contact@purplemartingolf.com</a>). Last updated 2026-10-15.</p>
+  <p class="meta">Purple Martin is a golf app made in Finland. Data controller: Samuli Lappalainen, Finland (<a href="mailto:contact@purplemartingolf.com">contact@purplemartingolf.com</a>). Last updated 2026-10-16.</p>
   <p class="meta"><a href="terms.html">Terms of Service</a> · <a href="terms.html#fi">Käyttöehdot</a></p>
 
   <p>Questions or requests: <strong><a href="mailto:contact@purplemartingolf.com">contact@purplemartingolf.com</a></strong>. This notice says what the app does with
@@ -91,10 +91,10 @@
     <li>The Garmin watch app sends no crash reports.</li>
   </ul>
 
-  <h2>If you sign in with Google (optional)</h2>
+  <h2>If you sign in with Google, or Apple on iPhone (optional)</h2>
   <p>Everything above works without an account. If you sign in:</p>
   <ul>
-    <li>Your <strong>name, email address and profile picture</strong> come from your Google account and
+    <li>Your <strong>name, email address and profile picture</strong> come from your Google (or Apple) account and
       are stored so your rounds and settings follow you across your devices.</li>
     <li><strong>Your rounds</strong> are stored under your account, including the players you add to
       them (their name, gender, handicap and scores) and any shot detail you record.</li>
@@ -106,11 +106,19 @@
       discovery. A result shows your name, picture and home club; your handicap index only when they
       typed your full name.</li>
     <li><strong>Playing together.</strong> A player you link into your round can see that entry's name,
-      scores and shot detail. In a live round the participants see each other's names, pictures and
-      scores — <strong>not your shot locations</strong>. In an event, your name and score appear on that
-      event's leaderboard. If the event's organiser makes the leaderboard public, anyone with its link
-      sees the names and scores in a browser (no pictures or handicaps) until the organiser switches it
-      off.</li>
+      scores and shot detail. When you play as a group, each of you plays your own round and the rounds
+      are linked. The group's members see each other's names, pictures and scores, and any member can
+      enter or correct any member's score — they do <strong>not</strong> see your shot locations. In an
+      event, your name and score appear on that event's leaderboard. If the event's organiser makes the
+      leaderboard public, anyone with its link sees the names and scores in a browser (no pictures or
+      handicaps) until the organiser switches it off.</li>
+    <li><strong>Event history.</strong> In an event, every change is logged: scores (who entered or changed
+      whose score, the old and new value), organiser corrections, tee-sheet and group changes, finishing
+      and reopening, and settings. Each entry has the name and account of the person who made the change,
+      this installation's random app ID, whether it came from the phone, watch or organiser, and the time.
+      Only the event's organisers can read it, in the app or as a spreadsheet (CSV). Entries are kept
+      13 months. When the event is finished, a copy is stored on our server (Microsoft Azure, EU) and also
+      deleted after 13 months. Your own entries are included in Export my data.</li>
     <li><strong>Your own photo and banner (optional).</strong> If you upload a profile photo or a cover banner, it is
       stored on Purple Martin's server (Microsoft Azure, EU) with location and other hidden data removed, and shown
       instead of your Google picture to golfers who can already see you: people in your rounds and events, your
@@ -134,8 +142,8 @@
 
   <h2>Shot locations (only if you turn on “Track shot locations”)</h2>
   <ul>
-    <li>The spots you played off-green shots from are saved with the round under your account — also on rounds you join on someone else’s
-      phone. Only you get them back. Putts are never location-tracked.</li>
+    <li>The spots you played off-green shots from are saved with your own round under your account. Only
+      you get them back; other members of your group don't get them. Putts are never location-tracked.</li>
   </ul>
 
   <h2>Who else is involved</h2>
@@ -148,7 +156,7 @@
     <tr><td>MET Norway, Open-Meteo</td><td>Weather at the course</td><td>Nothing about you — our backend asks for the course's location</td></tr>
     <tr><td>National Land Survey of Finland, Maa- ja Ruumiamet (Estonia), Open-Meteo</td><td>Height data for plays-like and green slopes</td><td>Nothing about you — our backend fetches course areas only</td></tr>
     <tr><td>DGT (Direção-Geral do Território, Portugal)</td><td>Height data for courses in Portugal</td><td>Nothing — downloaded once and stored on our server, never contacted while you use the app</td></tr>
-    <tr><td>Apple</td><td>App Store and TestFlight: installing and updating the iPhone app</td><td>If you have chosen in the iPhone's settings to share analytics with app developers, Apple passes on crash reports and usage statistics without your name. TestFlight testers' feedback goes through Apple. The app itself contains no Apple analytics code</td></tr>
+    <tr><td>Apple</td><td>App Store and TestFlight: installing and updating the iPhone app; Sign in with Apple, if you choose it on iPhone</td><td>Your sign-in, when you sign in with Apple. If you have chosen in the iPhone's settings to share analytics with app developers, Apple passes on crash reports and usage statistics without your name. TestFlight testers' feedback goes through Apple. The app itself contains no Apple analytics code</td></tr>
     <tr><td>Microsoft Azure</td><td>Hosting our backend and database</td><td>Everything the backend stores, above</td></tr>
     <tr><td>Garmin Connect</td><td>Only with the Garmin watch app: the round saved as a golf activity in <em>your</em> Garmin account, under Garmin's terms (turn it off in the watch's round menu). The Garmin Connect app on your phone also carries the messages between Purple Martin and the watch app</td><td>The round's time, heart rate and GPS track, a lap per hole</td></tr>
   </table>
@@ -160,8 +168,9 @@
     <li><strong>Settings › Privacy › Export my rounds</strong> makes a spreadsheet (CSV) of the rounds on this phone and
       shares it only with the app you pick — nothing is sent to us. Works signed out too.</li>
     <li><strong>Settings › Privacy › Delete account</strong> permanently removes your account, settings
-      and every round you own, on the server and on that device. Rounds other people own that you
-      joined stay theirs, with your link removed.</li>
+      and every round you own, on the server and on that device. Other members' rounds stay theirs,
+      with your link removed. In their groups and in event histories your name becomes “Deleted player”
+      and your account and installation IDs are removed; the entries themselves stay.</li>
     <li><strong>Delete only some of your data:</strong> remove a round in the app, your photo or banner in
       Settings, or turn off “Help improve shot detection” to stop sending shot data. For anything else —
       feedback you sent, shot data already uploaded — email
