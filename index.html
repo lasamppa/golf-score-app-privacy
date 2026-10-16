@@ -77,7 +77,8 @@
       app asks our backend by course only; the backend asks MET Norway (Open-Meteo if MET Norway is unavailable)
       for the course's location. <strong>Your position is never sent.</strong></li>
     <li><strong>Height data</strong> for plays-like and green slopes is fetched by our backend for the course
-      area only: from the National Land Survey of Finland, Estonia's Maa- ja Ruumiamet, Portugal's DGT (tiles
+      area only: from the National Land Survey of Finland, Estonia's Maa- ja Ruumiamet, Norway's Kartverket, Denmark's
+      Klimadatastyrelsen (via Datafordeler), Spain's IGN, Portugal's DGT (tiles
       downloaded once and stored on our server), and elsewhere Open-Meteo.</li>
     <li>On a Garmin watch, if the phone has sent no weather, the watch uses Garmin's own weather.</li>
   </ul>
@@ -154,7 +155,7 @@
     <tr><td>MapTiler</td><td>Satellite images, only when you switch a map to satellite</td><td>Your IP address and the map area on your screen</td></tr>
     <tr><td>OpenStreetMap</td><td>Course shapes and the map around them (roads, paths, buildings, forest)</td><td>Nothing about you — our backend fetches course areas only</td></tr>
     <tr><td>MET Norway, Open-Meteo</td><td>Weather at the course</td><td>Nothing about you — our backend asks for the course's location</td></tr>
-    <tr><td>National Land Survey of Finland, Maa- ja Ruumiamet (Estonia), Open-Meteo</td><td>Height data for plays-like and green slopes</td><td>Nothing about you — our backend fetches course areas only</td></tr>
+    <tr><td>National Land Survey of Finland, Maa- ja Ruumiamet (Estonia), Kartverket (Norway), Klimadatastyrelsen via Datafordeler (Denmark), IGN (Spain), Open-Meteo</td><td>Height data for plays-like and green slopes</td><td>Nothing about you — our backend fetches course areas only</td></tr>
     <tr><td>DGT (Direção-Geral do Território, Portugal)</td><td>Height data for courses in Portugal</td><td>Nothing — downloaded once and stored on our server, never contacted while you use the app</td></tr>
     <tr><td>Apple</td><td>App Store and TestFlight: installing and updating the iPhone app; Sign in with Apple, if you choose it on iPhone</td><td>Your sign-in, when you sign in with Apple. If you have chosen in the iPhone's settings to share analytics with app developers, Apple passes on crash reports and usage statistics without your name. TestFlight testers' feedback goes through Apple. The app itself contains no Apple analytics code</td></tr>
     <tr><td>Microsoft Azure</td><td>Hosting our backend and database</td><td>Everything the backend stores, above</td></tr>
