@@ -37,7 +37,7 @@
 <body>
 <main>
   <h1>Purple Martin — Privacy Notice</h1>
-  <p class="meta">Purple Martin is a golf app made in Finland. Data controller: Samuli Lappalainen, Finland (<a href="mailto:contact@purplemartingolf.com">contact@purplemartingolf.com</a>). Last updated 2026-10-24.</p>
+  <p class="meta">Purple Martin is a golf app made in Finland. Data controller: Samuli Lappalainen, Finland (<a href="mailto:contact@purplemartingolf.com">contact@purplemartingolf.com</a>). Last updated 2026-10-26.</p>
   <p class="meta"><a href="terms.html">Terms of Service</a> · <a href="terms.html#fi">Käyttöehdot</a></p>
 
   <p>Questions or requests: <strong><a href="mailto:contact@purplemartingolf.com">contact@purplemartingolf.com</a></strong>. This notice says what the app does with
@@ -66,6 +66,7 @@
       month and the round's approximate length. It has no account, name, course, location or score and is not
       linked to you, so it is not in Export my data. Kept 24 months, only to make shot detection work on each
       watch model. Legal basis: your consent (the same yes).</li>
+    <li><strong>Scores from photo.</strong> A photo of a scorecard is read on your phone by Google's ML Kit text recognition (its model comes with Google Play services) and deleted after reading — it is never uploaded. The ML Kit library may send Google anonymous usage and diagnostic data about the text reader, never the photo or its text.</li>
   </ul>
 
   <h2>Finding courses</h2>
@@ -140,6 +141,7 @@
       different golfers is hidden until it has been reviewed.</li>
     <li><strong>Your devices.</strong> Each device you use while signed in is listed under your account
       (model, Android or iOS version and app version, first and last use), shown to you in Settings › Your devices.</li>
+    <li><strong>Notifications.</strong> Your phone's push address (from Firebase Cloud Messaging on Android, Apple's push service on iPhone) and the app's language are stored with that device, so we can tell you when someone invites you, when an organiser keeps your round, and — only if you asked to hear about buddies' rounds — about a buddy's round (after their first hole and at the finish). It is removed when you sign out or delete your account. On Android, Firebase also keeps an installation ID for the app. Each kind can be switched off in the phone's notification settings.</li>
     <li><strong>Send feedback</strong> (Settings, or the round menu) sends what you write, with your name
       and email so we can reply, the app version and phone model, any screenshots you add (from the round
       menu, a picture of the screen you were on is added first — you can remove it), and — <strong>only if
@@ -166,6 +168,8 @@
     <tr><td>National Land Survey of Finland, Maa- ja Ruumiamet (Estonia), Kartverket (Norway), Klimadatastyrelsen via Datafordeler (Denmark), IGN (Spain), Copernicus DEM open-data archive, Open-Meteo</td><td>Height data for plays-like and green slopes</td><td>Nothing about you — our backend fetches course areas only</td></tr>
     <tr><td>DGT (Direção-Geral do Território, Portugal), Lantmäteriet (Sweden)</td><td>Height data for courses in Portugal and Sweden</td><td>Nothing — downloaded once and stored on our server, never contacted while you use the app</td></tr>
     <tr><td>Apple</td><td>App Store and TestFlight: installing and updating the iPhone app; Sign in with Apple, if you choose it on iPhone</td><td>Your sign-in, when you sign in with Apple. If you have chosen in the iPhone's settings to share analytics with app developers, Apple passes on crash reports and usage statistics without your name. TestFlight testers' feedback goes through Apple. The app itself contains no Apple analytics code</td></tr>
+    <tr><td>Google Firebase Cloud Messaging (Android), Apple Push Notification service (iPhone)</td><td>Delivering the notifications you get</td><td>Your phone's push address and the message</td></tr>
+    <tr><td>Google ML Kit</td><td>Reading a scorecard photo, on your phone</td><td>Anonymous usage and diagnostic data about the text reader — never the photo or its text</td></tr>
     <tr><td>Microsoft Azure</td><td>Hosting our backend and database</td><td>Everything the backend stores, above</td></tr>
     <tr><td>Garmin Connect</td><td>Only with the Garmin watch app: the round saved as a golf activity in <em>your</em> Garmin account, under Garmin's terms (turn it off in the watch's round menu). The Garmin Connect app on your phone also carries the messages between Purple Martin and the watch app</td><td>The round's time, heart rate and GPS track, a lap per hole</td></tr>
   </table>
