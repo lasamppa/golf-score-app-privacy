@@ -82,14 +82,18 @@
 
   <h2>Today's pin positions and map reports</h2>
   <ul>
-    <li><strong>“Flag was here”</strong> (only when you tap it, by the green of a hole you just scored): your phone
-      sends our backend its GPS position, the course, the hole and your local date. Everyone playing that course the
+    <li><strong>“Flag was here”</strong> (only when you tap it, on your phone or your watch, by the green of a hole you
+      just scored): your phone sends our backend the GPS position (a watch's tap goes through your phone), the course, the hole and your local date. Everyone playing that course the
       same day then sees the distance to that day's pin. The backend keeps the position, the time and a short code made
       from a random ID for this installation of the app together with the course and the date. The code changes with
       every course and day, so it can't link your taps across courses or days. It's only used so that a phone's later
-      tap replaces its earlier one. <strong>No account or name is stored.</strong> Deleted 3 days after that date.</li>
+      tap replaces its earlier one. <strong>No account or name is stored.</strong> Deleted 3 days after that date.
+      Your phone passes that day's pins on to your Wear OS or Garmin watch, so the watch shows the distance too.</li>
+    <li><strong>An event's pin sheet</strong>: an event's organiser can set the day's pins on the map, from anywhere.
+      They're stored with the course's day as above, with the event's code (not the organiser's name), shown to
+      everyone playing that course that day, and deleted 3 days after that date.</li>
     <li><strong>Report a map problem</strong> (when you send one): the course, the hole, the point you pressed on the
-      map, what's wrong and your note, if you write one. The report is <strong>anonymous</strong>: no account, name or
+      map, what's wrong, your note if you write one, and the app version and platform (Android or iOS). The report is <strong>anonymous</strong>: no account, name or
       installation ID is stored. It's used only to correct the course map (in OpenStreetMap) and deleted when the map
       has been fixed. Please don't put personal details in the note.</li>
   </ul>
