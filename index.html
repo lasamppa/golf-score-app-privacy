@@ -37,7 +37,7 @@
 <body>
 <main>
   <h1>Purple Martin — Privacy Notice</h1>
-  <p class="meta">Purple Martin is a golf app made in Finland. Data controller: Samuli Lappalainen, Finland (<a href="mailto:contact@purplemartingolf.com">contact@purplemartingolf.com</a>). Last updated 2026-11-11.</p>
+  <p class="meta">Purple Martin is a golf app made in Finland. Data controller: Samuli Lappalainen, Finland (<a href="mailto:contact@purplemartingolf.com">contact@purplemartingolf.com</a>). Last updated 2026-11-15.</p>
   <p class="meta"><a href="terms.html">Terms of Service</a> · <a href="terms.html#fi">Käyttöehdot</a></p>
 
   <p>Questions or requests: <strong><a href="mailto:contact@purplemartingolf.com">contact@purplemartingolf.com</a></strong>. This notice says what the app does with
@@ -54,7 +54,7 @@
       noted for each round and kept only on your devices (the phone keeps the last 10 rounds). A short summary goes
       into the app log, so it leaves your phone only if you attach the log to feedback.</li>
     <li><strong>Help improve shot detection</strong> (off unless you say yes — the app asks once, at your
-      first round with a watch; change it any time in Settings › Watch): your Wear OS or Garmin watch records
+      first round with a watch; change it any time in Settings › Watch): your Wear OS, Apple Watch or Garmin watch records
       its GPS track and wrist motion during rounds and passes the file to your phone. When you're signed in, the phone sends it
       with that round's scorecard and marked shots to Purple Martin's server, <strong>only to improve shot
       detection</strong>. Legal basis: your consent. Kept 12 months, deleted with your account; a copy stays
@@ -67,6 +67,13 @@
       linked to you, so it is not in Export my data. Kept 24 months, only to make shot detection work on each
       watch model. Legal basis: your consent (the same yes).</li>
     <li><strong>Scores from photo.</strong> A photo of a scorecard is read on your phone by Google's ML Kit text recognition (on Android its model comes with Google Play services, on iPhone it is inside the app) and deleted after reading — it is never uploaded. The ML Kit library may send Google anonymous usage and diagnostic data about the text reader, never the photo or its text.</li>
+    <li><strong>Importing rounds.</strong> A screenshot (for example from GameBook) or a spreadsheet file (CSV) you share
+      with the app is read on your phone and never uploaded. To find the courses, the app sends our backend only the
+      course names it read (signed in: up to 100 names at once). Rounds you save from an import are stored like your
+      other rounds and marked as imported; they never appear on event boards. (Added 2026-11-15.)</li>
+    <li><strong>Apple Watch and Apple Health.</strong> On Apple Watch a round is recorded as a golf workout in Apple
+      Health on your devices (heart rate, energy, route). Purple Martin shows your heart rate on the watch but never
+      sends Health data anywhere.</li>
     <li><strong>Voice scoring on the watch (Wear OS).</strong> A score you say is turned into words by the watch's speech recognition — Google's speech service, which may process the audio on Google's servers, or on the watch itself when it can. Only the words are used, to fill in the score; neither the audio nor the words are sent to Purple Martin or kept. With “Voice scoring” on in the watch menu, the watch asks for microphone access and listens only for a few seconds after you tap the score, or open the app during a round.</li>
   </ul>
 
@@ -95,7 +102,7 @@
     <li><strong>Report a map problem</strong> (when you send one): the course, the hole, the point you pressed on the
       map, what's wrong, your note if you write one, and the app version and platform (Android or iOS). The report is <strong>anonymous</strong>: no account, name or
       installation ID is stored. It's used only to correct the course map (in OpenStreetMap) and deleted when the map
-      has been fixed. Please don't put personal details in the note. <strong>One exception:</strong> if you ask for a
+      has been fixed, or after 12 months. Please don't put personal details in the note. <strong>One exception:</strong> if you ask for a
       better course map while signed in, we keep your account id with that course so that we can tell you when the map
       has improved. It is deleted when we tell you, after one year at the latest, or when you delete your account.</li>
   </ul>
@@ -129,7 +136,9 @@
   <p>Everything above works without an account. If you sign in:</p>
   <ul>
     <li>Your <strong>name, email address and profile picture</strong> come from your Google (or Apple) account and
-      are stored so your rounds and settings follow you across your devices.</li>
+      are stored so your rounds and settings follow you across your devices. With Apple, we get your name only the
+      first time, and your email or the private relay address Apple makes if you choose Hide My Email; deleting your
+      account also ends Purple Martin's access in your Apple ID.</li>
     <li><strong>Your rounds</strong> are stored under your account, including the players you add to
       them (their name, gender, handicap and scores) and any shot detail you record.</li>
     <li><strong>Your settings</strong> sync too: handicap index, gender, units, home club, the clubs in
@@ -152,7 +161,9 @@
       this installation's random app ID, whether it came from the phone, watch or organiser, and the time.
       Only the event's organisers can read it, in the app or as a spreadsheet (CSV). Entries are kept
       13 months. When the event is finished, a copy is stored on our server (Microsoft Azure, EU) and also
-      deleted after 13 months. Your own entries are included in Export my data.</li>
+      deleted after 13 months. Your own entries are included in Export my data. If the organiser deletes an event
+      before anyone else has played in it, its history is deleted; one entry, who deleted it and when, stays for
+      13 months.</li>
     <li><strong>Your own photo and banner (optional).</strong> If you upload a profile photo or a cover banner, it is
       stored on Purple Martin's server (Microsoft Azure, EU) with location and other hidden data removed, and shown
       instead of your Google picture to golfers who can already see you: people in your rounds and events, your
@@ -163,10 +174,16 @@
       are stored with your account. For seven days they are shown on your player card, to the golfers who can see it,
       and in your buddies' feed (when you share with buddies). Turn it off any time; the last one you showed stays in
       Export my data until you delete your account.</li>
+    <li><strong>Your finished rounds in buddies' feed (on unless you turn it off).</strong> When you finish a round,
+      your buddies who have you as a buddy too see it for a week in their feed: the course, your score and to par,
+      strokes per hole and your course handicap. It is deleted from our server after 14 days. During an event that
+      hides its last holes, the score is left out until the event is finished. Turn it off in Settings › Buddies
+      (“Show my finished rounds in buddies' feed”). (Added 2026-11-15.)</li>
     <li><strong>Share with a coach (optional).</strong> If you make a coach link in Settings, anyone with the link can see,
       without signing in, your first name, the handicap index recorded with your newest round, and your newest 5, 10 or 20
       rounds (date, course, scores, putts, fairways, greens) with the statistics over them, until the link expires (7, 30 or
-      90 days) or you revoke it. Rounds you left out of your statistics and simulator rounds are not shown. We keep only a
+      90 days) or you revoke it. Rounds you left out of your statistics and simulator rounds are not shown, and a round
+      of an event that hides its last holes only once the event is finished. We keep only a
       scrambled form (a hash) of the link with your account, so even we cannot open it; it is deleted with your account.
       The page tells search engines not to list it.</li>
     <li><strong>Reports and blocks.</strong> If you report someone's picture, the report (your account, the picture,
@@ -176,7 +193,8 @@
       Pictures are reviewed by the developer; no outside moderation service is used. A picture reported by three
       different golfers is hidden until it has been reviewed.</li>
     <li><strong>Your devices.</strong> Each device you use while signed in is listed under your account
-      (model, Android or iOS version and app version, first and last use), shown to you in Settings › Your devices.</li>
+      (model, Android or iOS version and app version, first and last use), shown to you in Settings › Your devices. A device
+      you haven't used for 13 months is removed.</li>
     <li><strong>Notifications.</strong> Your phone's push address (from Firebase Cloud Messaging on Android, Apple's push service on iPhone) and the app's language are stored with that device, so we can tell you when someone invites you, when an organiser keeps your round, and — only if you asked to hear about buddies' rounds — about a buddy's round (after their first hole and at the finish). It is removed when you sign out or delete your account. On Android, Firebase also keeps an installation ID for the app. Each kind can be switched off in the phone's notification settings.</li>
     <li><strong>Send feedback</strong> (Settings, or the round menu) sends what you write, with your name
       and email so we can reply, the app version and phone model, any screenshots you add (from the round
@@ -208,13 +226,16 @@
     <tr><td>Google ML Kit</td><td>Reading a scorecard photo, on your phone</td><td>Anonymous usage and diagnostic data about the text reader — never the photo or its text</td></tr>
     <tr><td>Google speech recognition (Wear OS)</td><td>Turning a score you say on the watch into words</td><td>The audio of what you say, while the watch listens (a few seconds) — unless the watch recognises it itself</td></tr>
     <tr><td>Microsoft Azure</td><td>Hosting our backend and database</td><td>Everything the backend stores, above</td></tr>
-    <tr><td>Garmin Connect</td><td>Only with the Garmin watch app: the round saved as a golf activity in <em>your</em> Garmin account, under Garmin's terms (turn it off in the watch's round menu). The Garmin Connect app on your phone also carries the messages between Purple Martin and the watch app</td><td>The round's time, heart rate and GPS track, a lap per hole</td></tr>
+    <tr><td>Garmin Connect</td><td>Only with the Garmin watch app: the round saved as a golf activity in <em>your</em> Garmin account, under Garmin's terms (turn it off in the watch's round menu). On Android the Garmin Connect app carries the messages between Purple Martin and the watch app; on iPhone you pick the watch once in Garmin Connect and the two then talk directly over Bluetooth</td><td>The round's time, heart rate and GPS track, a lap per hole</td></tr>
   </table>
 
   <h2 id="delete">Your data, your choice — including deleting your account</h2>
   <ul>
     <li><strong>Delete a round</strong> in the app and it is removed from our backend too.</li>
-    <li><strong>Settings › Privacy › Export my data</strong> gives you everything the backend holds about you.</li>
+    <li><strong>Settings › Privacy › Export my data</strong> gives you everything the backend holds about you:
+      your account, settings, rounds, events, buddies' feed entries, tee times, invitations, feedback and the rest
+      above. Anonymous records (map reports, pin taps, the watch model register) aren't linked to you, so they aren't
+      in it.</li>
     <li><strong>Settings › Privacy › Export my rounds</strong> makes a spreadsheet (CSV) of the rounds on this phone and
       shares it only with the app you pick — nothing is sent to us. Works signed out too.</li>
     <li><strong>Settings › Privacy › Delete account</strong> permanently removes your account, settings
