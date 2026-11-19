@@ -37,7 +37,7 @@
 <body>
 <main>
   <h1>Purple Martin — Privacy Notice</h1>
-  <p class="meta">Purple Martin is a golf app made in Finland. Data controller: Samuli Lappalainen, Finland (<a href="mailto:contact@purplemartingolf.com">contact@purplemartingolf.com</a>). Last updated 2026-11-18.</p>
+  <p class="meta">Purple Martin is a golf app made in Finland. Data controller: Samuli Lappalainen, Finland (<a href="mailto:contact@purplemartingolf.com">contact@purplemartingolf.com</a>). Last updated 2026-11-19.</p>
   <p class="meta"><a href="terms.html">Terms of Service</a> · <a href="terms.html#fi">Käyttöehdot</a></p>
 
   <p>Questions or requests: <strong><a href="mailto:contact@purplemartingolf.com">contact@purplemartingolf.com</a></strong>. This notice says what the app does with
@@ -142,13 +142,14 @@
     <li>The Garmin watch app sends no crash reports.</li>
   </ul>
 
-  <h2>If you sign in with Google, or Apple on iPhone (optional)</h2>
+  <h2>If you sign in with Google, Apple on iPhone, or an email code (optional)</h2>
   <p>Everything above works without an account. If you sign in:</p>
   <ul>
     <li>Your <strong>name, email address and profile picture</strong> come from your Google (or Apple) account and
       are stored so your rounds and settings follow you across your devices. With Apple, we get your name only the
       first time, and your email or the private relay address Apple makes if you choose Hide My Email; deleting your
-      account also ends Purple Martin's access in your Apple ID.</li>
+      account also ends Purple Martin's access in your Apple ID. With an email code, we store only your email address, and the name you type in the app; there is no password.</li>
+    <li><strong>Signing in with an email code.</strong> You type your email address in the app and we email you a six-digit code through Microsoft's email service (Azure Communication Services, EU). While the code is waiting, our server keeps a scrambled form of it (not the code itself), the installation ID of the phone that asked, and when codes were sent to the address — for at most 24 hours, to stop codes being guessed or the address being flooded. If the address is the one of a Google account that already uses Purple Martin, the code signs in to that same account, and your other phones get a notification that it happened.</li>
     <li><strong>Your rounds</strong> are stored under your account, including the players you add to
       them (their name, gender, handicap and scores) and any shot detail you record.</li>
     <li><strong>Your settings</strong> sync too: handicap index, gender, units, home club, the clubs in
@@ -235,7 +236,7 @@
     <tr><td>Google Firebase Cloud Messaging (Android), Apple Push Notification service (iPhone)</td><td>Delivering the notifications you get</td><td>Your phone's push address and the message</td></tr>
     <tr><td>Google ML Kit</td><td>Reading a scorecard photo, on your phone</td><td>Anonymous usage and diagnostic data about the text reader — never the photo or its text</td></tr>
     <tr><td>Google speech recognition (Wear OS)</td><td>Turning a score you say on the watch into words</td><td>The audio of what you say, while the watch listens (a few seconds) — unless the watch recognises it itself</td></tr>
-    <tr><td>Microsoft Azure</td><td>Hosting our backend and database</td><td>Everything the backend stores, above</td></tr>
+    <tr><td>Microsoft Azure</td><td>Hosting our backend and database; sending the sign-in code email (Azure Communication Services), if you sign in with an email code</td><td>Everything the backend stores, above; for the code email, your email address and the code</td></tr>
     <tr><td>Garmin Connect</td><td>Only with the Garmin watch app: the round saved as a golf activity in <em>your</em> Garmin account, under Garmin's terms (turn it off in the watch's round menu). On Android the Garmin Connect app carries the messages between Purple Martin and the watch app; on iPhone you pick the watch once in Garmin Connect and the two then talk directly over Bluetooth</td><td>The round's time, heart rate and GPS track, a lap per hole</td></tr>
   </table>
 
@@ -255,8 +256,8 @@
     <li><strong>Delete only some of your data:</strong> remove a round in the app, your photo or banner in
       Settings, or turn off “Help improve shot detection” to stop sending shot data. For anything else —
       feedback you sent, shot data already uploaded — email
-      <a href="mailto:contact@purplemartingolf.com">contact@purplemartingolf.com</a> from your Google
-      account's address and say what to delete; it is done within 30 days.</li>
+      <a href="mailto:contact@purplemartingolf.com">contact@purplemartingolf.com</a> from the address you sign in with (your Google account's, or
+      the one you use for the email code) and say what to delete; it is done within 30 days.</li>
     <li><strong>Server logs</strong> (which device called which part of the backend, and when) are kept
       for up to 90 days for security and troubleshooting, then deleted automatically. They are not
       removed by deleting your account.</li>
@@ -264,7 +265,7 @@
   </ul>
   <div class="box">
     <p><strong>Delete your Purple Martin account without the app</strong></p>
-    <p>Email <strong><a href="mailto:contact@purplemartingolf.com">contact@purplemartingolf.com</a></strong> from the address of the Google account you signed in with,
+    <p>Email <strong><a href="mailto:contact@purplemartingolf.com">contact@purplemartingolf.com</a></strong> from the address you sign in with (your Google account's, or the one you use for the email code),
     and ask for your account to be deleted. Your account, settings and every round you own are deleted
     within 30 days, and you get a reply when it's done.</p>
   </div>
